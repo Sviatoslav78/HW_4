@@ -71,13 +71,13 @@ public class Main {
     private static void drawRectangle(int b, int temp, int tempSec, int p) {
 
 
-        if(b == 0) {
+        if (b == 0) {
             System.out.println();
             b = tempSec;
             temp++;
         }
 
-        if (temp==tempSec){
+        if (temp == tempSec) {
             return;
         }
 
@@ -91,7 +91,7 @@ public class Main {
 
         if (a == 0) {
             --b;
-            a=temp;
+            a = temp;
             temp = 0;
             System.out.println();
         }
@@ -100,6 +100,6 @@ public class Main {
         }
         System.out.print("+");
         --a;
-        drawRectangle(a,b,temp + 1);
+        drawRectangle(a, b, temp + 1);
     }
 }
